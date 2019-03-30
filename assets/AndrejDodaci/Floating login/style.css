@@ -7,8 +7,12 @@ body
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: royalblue;
+    background-color: royalblue;
     font-family: Poppins, sans-serif;
+    background-image: url("indexPic.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 .login
 {
@@ -18,6 +22,7 @@ body
     padding: 40px;
     background: #fff;
     border-radius: 2%;
+
 }
 .login h2
 {

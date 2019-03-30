@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+body
+{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.calendar
+{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    background-color: #efefef;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+.containter
+{
+    display: grid;
+    grid-template-columns: 100%;
+    margin: 1%;
+}
+.NameDiv
+{
+    text-align: center;
+    background-color: royalblue;
+    font-weight: bold;
+    color: #efefef;
+    text-transform: uppercase;
+}
+.day
+{
+    display: grid;
+    grid-template-columns: 12% 12% 12% 12% 12% 12% 12% 12%;
+    background-color: white;
+    text-align: center;
+}
+.slot{
+    width: 100%;
+    background-color: white;
+}

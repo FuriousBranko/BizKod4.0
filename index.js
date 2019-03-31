@@ -1,11 +1,10 @@
 const express = require("express");
 const expressSession = require("express-session");
 const handlebars = require("express-handlebars");
-const fileUpload = require('express-fileupload');
 const mongoStore = require("connect-mongo")(expressSession);
 const mongoose = require('mongoose');
 const cookieParser = require("cookie");
-mongoose.connect('mongodb://localhost:27017/defect', {useNewUrlParser: true});
+mongoose.connect('mongodb://localhost:27017/newdatabase', {useNewUrlParser: true});
 mongoose.Promise = global.Promise;
 
 const app = express();
@@ -16,13 +15,12 @@ app.set("view engine" , "hbs");
 //Middleware
 app.use(require("body-parser").json());
 app.use(require("body-parser").urlencoded({extended : false}));
-app.use(fileUpload());
 app.use(expressSession({
-    secret: "/verysecuresecret/", 
+    secret: "/vinjak50/", 
     saveUninitialized: false,//return to false 
     resave: false,//return to false
     store: new mongoStore({mongooseConnection: mongoose.connection}),
-    cookie: {maxAge: 120 * 1000}//30sec cookie lifetime
+    cookie: {maxAge: 30 * 1000}//30sec cookie lifetime
 }));
 app.use("/", require("./router"));
 app.use("/assets",express.static("assets/scripts"));

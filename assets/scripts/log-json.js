@@ -11,7 +11,7 @@ $(document).ready(function (){
         };
         $.ajax({
             type: "POST",
-            url: "/login",
+            url: "/main",
             data: JSON.stringify(thedata),
             success: function(data){
                 window.location.href=data.url;

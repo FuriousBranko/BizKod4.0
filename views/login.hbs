@@ -1,26 +1,11 @@
+<script src="assets/jquery-3.3.1.js"></script>
 <script src="assets/log-json.js"></script>
-<link rel="stylesheet" type="text/css" href="assets/style.css">
+<link rel="stylesheet" type="text/css" href="assets/something.css">
 {{#if success}}
-<button id="logout">log out</button>
+<h1>congratz</h1>
 {{else}}
-<div class="login">
-<h2>Sign in</h2>
-{{#if error}}
-<div style="background-color:rgba(0, 0, 0, 0.5)">
-<p style="color:white">{{error}}</p>
-</div>
+<h1 style="color:red">{{error}}</h1>
+<input id="username" type="text" placeholder="name">
+<input id="password" type="password" placeholder="password">
+<button id="submit">login</button>
 {{/if}}
-        <div class="input-group">
-            <input  id="username" type="text" name="" required="required">
-            <span>Username</span>
-        </div>
-        <div class="input-group">
-            <input  id="password" type="password" name="" required="required">
-            <span>Password</span>
-        </div>
-        <div class="input-group">
-            <input id="submit" type="submit" value="Login">
-        </div>
- <a href="/register">Forgot Password <span>Click Here</span></a>
-{{/if}}
-</div>

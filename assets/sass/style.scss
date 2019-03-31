@@ -7,6 +7,7 @@ html {
 }
 body {
     overflow-x: hidden;
+    background-image: linear-gradient(to right bottom, rgba($primary-blue,.8),rgba($primary-pink,0.8));
   }
 
 
@@ -22,11 +23,11 @@ body {
     left: 0;
     height: 100vh;
     z-index: 999;
-    background: #7386D5;
+    background: ivory;
     color: #fff;
     transition: all 0.3s;
 }
-
+ 
 /*
     DEMO STYLE 
 */
@@ -162,13 +163,13 @@ ul.CTAs a {
     margin-bottom: 5px;
 }
 
-a.download {
+a.settings {
     background: #fff;
     color: #7386D5;
 }
 
-a.article,
-a.article:hover {
+a.logout,
+a.logout:hover {
     background: #6d7fcc !important;
     color: #fff !important;
 }

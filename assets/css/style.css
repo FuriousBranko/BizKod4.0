@@ -229,3 +229,17 @@ a.logout:hover {
 {
 margin-left: 78%;
 }
+
+.modal-lg {
+    max-width: 80% !important;
+    height: 100% !important;
+}
+
+iframe{
+    height: 100%;
+    width: 100%;
+}
+
+.table {
+    border: 1px solid black;
+  }

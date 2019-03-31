@@ -4,12 +4,21 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link href="style.css" rel="stylesheet">
-    <script src="jquery-3.3.1.js"></script>
-    <script src="responsivnes.js"></script>
+
+
 </head>
 <body>
+<div id="monthYear" class="monthYear">
+    <button onclick="leftM()">left</button>
+    <div id="Mname" class="Mname"></div>
+    <button onclick="rightM()" class="right">right</button>
+    <button class="leftY" onclick="leftY()">left</button>
+    <div id="Yname" class="Yname"></div>
+    <button class="rightY()" onclick="rightY()">right</button>
+</div>
 <div id="calendar" class="calendar">
 </div>
-
+<script src="jquery-3.3.1.js"></script>
+<script src="responsivnes.js"></script>
 </body>
 </html>

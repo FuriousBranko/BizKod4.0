@@ -5,14 +5,22 @@ body
     height: 100vh;
     margin: 0;
     font-family: 'Poppins', sans-serif;
+    background-color: #efefef;
+}
+.monthYear
+{
+    display: grid;
+    grid-template-columns: 16.66666666666667% 16.66666666666667% 16.66666666666667% 16.66666666666667% 16.66666666666667% 16.66666666666667%;
+    width: 80%;
+    text-align: center;
 }
 .calendar
 {
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
     background-color: #efefef;
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 80%;
     justify-content: center;
 }
 .containter

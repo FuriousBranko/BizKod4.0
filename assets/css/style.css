@@ -1,14 +1,11 @@
-$primary-blue: #1BAFED;
-$primary-pink: #EA006F;
-
 
 html {
     font-size: 62.5%;
 }
 body {
     overflow-x: hidden;
-    background-image: linear-gradient(to right bottom, rgba($primary-blue,.8),rgba($primary-pink,0.8));
   }
+
 
 
 .wrapper {
@@ -46,12 +43,18 @@ p {
     color: #999;
 }
 
+h3{
+    font-weight: bold !important;
+}
+
 a,
 a:hover,
 a:focus {
     color: inherit;
-    text-decoration: none;
+    text-decoration: none !important;
     transition: all 0.3s;
+    font-weight: bold;
+    font-size: 12pt !important;
 }
 
 .navbar {
@@ -120,7 +123,7 @@ a:focus {
 
 #sidebar ul li a {
     padding: 10px;
-    font-size: 1.1em;
+    font-size: 10pt !important;
     display: block;
 }
 
@@ -166,9 +169,6 @@ a.logout:hover {
 }
 
 
-/* ---------------------------------------------------
-    CONTENT STYLE
------------------------------------------------------ */
 
 #content {
     width: calc(100% - 250px);
@@ -184,9 +184,7 @@ a.logout:hover {
     width: 100%;
 }
 
-/* ---------------------------------------------------
-    MEDIAQUERIES
------------------------------------------------------ */
+
 
 @media (max-width: 768px) {
     #sidebar {
@@ -213,4 +211,12 @@ a.logout:hover {
 .row 
 {
     margin-bottom:2% 
+}
+
+.reject{
+    color: #c61a0d;
+}
+
+.submit{
+    color:#58c61b;
 }

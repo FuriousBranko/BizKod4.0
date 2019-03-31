@@ -24,34 +24,7 @@
 </head>
 
 <body>
-    <!--SIDEBAR--
-    
-    <div class="sidebar">
-        <div class="sidebar-settings">
-            <a href="" class="settings">
-                <i class="icon icon-basic-question"></i>
-            
-            <h2 class="name">HelloWorld</h2>
-            </a>
-            <hr>
-        </div>
-        <div class="sidebar-nav">
-            <a href="#" class="nav">Home</a>
-            <a href="#" class="nav">Calender</a>
-            <a href="#" class="nav">College</a>
-            <a href="#" class="nav">Extra</a>
-        </div>
-        <hr>
-        <div class="sidebar__bottom">
-                <a href="#" class="nav-bottom">Pending</a>
-                <a href="#" class="nav-bottom">First round</a>
-                <a href="#" class="nav-bottom">Second round</a>
-                <a href="#" class="nav-bottom">Archive</a>
-        </div>
-        
 
-    </div>
--->
     <div class="wrapper">
         <!-- Sidebar  -->
         <nav id="sidebar">
@@ -112,23 +85,26 @@
                         </li>
                     </ul>
                 </li>
+                <li>
+            <a href="#manageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Managing
+                candidates</a>
+            <ul class="collapse list-unstyled" id="manageSubmenu">
+
+                <li>
+                    <a href="#" class="submit">Submit</a>
+                </li>
+                <li>
+                    <a href="#" class="reject">Reject</a>
+                </li>
             </ul>
-            <a href="#manageSubmenu" data-toggle="collapse" aria-expanded="false"
-                        class="dropdown-toggle">Managing candidates</a>
-                    <ul class="collapse list-unstyled" id="homeSubmenu">
-            
-            <li>
-                <button type="#">Submit</button>
-            </li>
-            <li>
-                <button type="#">Reject</button>
-            </li>
+                </li>
             </ul>
             <ul class="list-unstyled components">
-                
+
                 <li>
                     <a href="#" class="logout">Logout</a>
                 </li>
+                
             </ul>
         </nav>
 
